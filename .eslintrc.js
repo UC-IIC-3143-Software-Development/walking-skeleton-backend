@@ -11,10 +11,11 @@ module.exports = {
   plugins: ['prettier'],
   parserOptions: {
     ecmaVersion: 12,
-    sourceType: 'module',
+    sourceType: 'commonjs',
   },
   rules: {
     'prettier/prettier': 'error',
     'no-console': 'off',
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
   },
 };
